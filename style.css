@@ -1,10 +1,86 @@
 body {
 	background-image: url('https://i.ibb.co/bJ4rKnC/IMG-5135.jpg');
 }
-header {
-	background-image: url('https://i.ibb.co/DDCmmWS/Zrzut-ekranu-2024-03-29-132915.png');
-	background-size: cover;
-	height: 60%;
-	background-position: center;
-	background-repeat: no-repeat;
+.obrazek {
+	max-height: 300px;
+	width: 70rem;
+	margin-left: 40px;
+}
+.nawigacja {
+	font-size: 50px;
+}
+.nazwa {
+	justify-content: center;
+	margin-left: 30rem;
+	color: #c78f4a;
+}
+
+.nav-link {
+	color: #fcecbf;
+
+	margin-left: 20rem;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+
+	font-style: normal;
+}
+.nagłówek {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 400;
+	color: #fcecbf;
+}
+.o-mnie-info {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 400;
+	color: #fcecbf;
+}
+footer {
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-between;
+}
+.footer-section {
+	flex: 1;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 400;
+	color: #fcecbf;
+}
+table {
+	border-spacing: 0;
+}
+
+table,
+td,
+th {
+	flex: 1;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 400;
+	color: #fcecbf;
+}
+
+td,
+th {
+	padding: 5px 20px;
+}
+
+thead {
+	background-color: tomato;
+}
+
+tbody {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+tfoot {
+	background-color: royalblue;
 }
