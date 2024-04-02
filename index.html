@@ -9,66 +9,39 @@
     <link rel="stylesheet" href="./style.css">
     <title>MMC School</title>
 </head>
-<header>
-    <img src="https://i.ibb.co/n3dMV8B/logo-znak-wodny.png" alt="Opis obrazka" class="obrazek">
 
+<header>
+    <div class="header-container">
+        <img src="https://i.ibb.co/n3dMV8B/logo-znak-wodny.png" alt="Opis obrazka" class="logo">
+        <nav class="navigation">
+            <a class="nav-link active" href="#">O MNIE!</a>
+            <a class="nav-link" href="#">NEWSLETTER</a>
+            <a class="nav-link" href="#">CENNIK</a>
+            <a class="nav-link" href="#">ZAPISZ SIĘ NA WIZYTĘ!</a>
+            <input type="color" class="color-picker">
+        </nav>
+    </div>
 </header>
+<br>
+<br>
 
 <body>
-    <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-    </nav>
-    <input type="color">
-    <h1 class="nagłówek">O mnie!</h1>
-    <div class="o-mnie-info">
-        <p>Od 2016 roku jestem aktywnie zaangażowana w branżę beauty</p>
-        <p>Moja przygoda rozpoczęła
-            się
-            jako stylistka rzęs.</p>
-        <p>Z ambicją i determinacją rozwijałam swoją karierę wielokrotnie zdobywajac podium na
-            mistrzostwach stylizacji rzęs oraz osiągając poziom instruktora.</p>
-        <p> W raz z rosnacym doświdczeniem zostałam sędzią na mistrzostwach, prelegentem oraz organizatorem takich
-            wydarzeń.</p>
-        <p> W dziedzinie makijażu permanentnego zaczęłam działać od 2022 roku, a szczególne miejsce w moim sercu zajmuje
-            pigmentacja ust.</p>
+    <div class="content">
+        <div class="image-container">
+            <img src="https://i.ibb.co/DL1K7Sy/IMG-5137.jpg" alt="obrazek-body" class="obrazek-body">
+        </div>
+        <div class="text-container">
+            <h2>O mnie</h2>
+            <p>Od 2016 roku jestem aktywnie zaangażowana w branżę beauty. Moja przygoda rozpoczęła się jako stylistka
+                rzęs. Z ambicją i determinacją rozwijałam swoją karierę wielokrotnie zdobywajac podium na mistrzostwach
+                stylizacji rzęs oraz osiągając poziom instruktora.</p>
+            <p>W raz z rosnacym doświdczeniem zostałam sędzią na mistrzostwach, prelegentem oraz organizatorem takich
+                wydarzeń.
+                W dziedzinie makijażu permanentnego zaczęłam działać od 2022 roku, a szczególne miejsce w moim sercu
+                zajmuje pigmentacja ust.</p>
+            <button>Sprawdź mój cennik!</button>
+        </div>
     </div>
-    <table>
-        <!-- <tr> -->
-        <!-- <th rowspan="2">Komórka 1</th> -->
-        <!-- <th>Komórka 2</th> -->
-        <!-- <th>Komórka 3</th> -->
-        <!-- </tr> -->
-        <!-- <tr> -->
-
-        <!-- <td colspan="2">Spotkanie ze znajomymi </td>  -->
-
-        <!-- </tr> -->
-        <thead>
-            <tr>
-                <th>Dania</th>
-                <th>Opis</th>
-                <th>Cena</th>
-                <th>Coś tam</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Burger</td>
-                <td>Z ketchup</td>
-                <td>30zł</td>
-                <td>Coś tam</td>
-            </tr>
-            <tr>
-                <td>Zapiekanka</td>
-                <td>Z mięsem</td>
-                <td>15zł</td>
-                <td>coś tam</td>
-            </tr>
-        </tbody>
-    </table>
-    <audio src="dark-future-logo-196217.mp3" controls></audio>
 
     <footer>
         <div class="footer-section">
@@ -94,24 +67,15 @@
                 <li>Final resource</li>
             </ul>
         </div>
-        <div class="footer-section">
-            <h3>Resources</h3>
-            <ul>
-                <li>Business</li>
-                <li>Education</li>
-                <li>Government</li>
-                <li>Gaming</li>
-            </ul>
+        <div class="newsletter-section">
+            <h3>Newsletter</h3>
+            <p>Bądź na bierząco i zapisz się!</p>
+            <form>
+                <input type="email" placeholder="Enter your email" class="email-newsletter">
+                <button type="submit">Zapisz się!</button>
+            </form>
         </div>
-        <div class="footer-section">
-            <h3>About</h3>
-            <ul>
-                <li>Team</li>
-                <li>Locations</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-            </ul>
-        </div>
+
     </footer>
 </body>
 
