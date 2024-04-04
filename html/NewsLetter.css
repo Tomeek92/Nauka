@@ -1,0 +1,107 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #000000; /* Zmiana tła na czarne */
+	color: #ffffff; /* Zmiana koloru tekstu na biały */
+	margin: 0;
+	padding: 0;
+}
+header {
+	margin-top: -5px;
+	background-color: #fcecbf;
+	padding: 20px; /* odstępy wewnątrz nagłówka */
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* cień */
+	max-width: 100%;
+	min-width: 100px;
+}
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: -20px;
+}
+.logo {
+	width: 350px; /* szerokość logo */
+}
+.nav-link {
+	color: #c78f4a;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.text-container {
+	flex: 1;
+	margin-left: 40px; /* Odstęp między obrazkiem a tekstem */
+	color: #c78f4a;
+	order: 1;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Dodanie cienia */
+	animation: fadeIn 1s ease; /* Dodajemy animację pojawiania się tekstu */
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff; /* Zmiana koloru nagłówka na biały */
+	transition: color 0.3s ease; /* Dodajemy efekt przejścia dla koloru tekstu nagłówka */
+}
+
+p {
+	line-height: 1.6;
+}
+
+.email-input {
+	width: calc(100% - 40px);
+	margin: 0 auto 20px;
+	padding: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-sizing: border-box;
+	color: #000000; /* Zmiana koloru tekstu w polu e-mail na czarny */
+}
+
+.cta-button {
+	display: block;
+	width: 200px;
+	margin: 20px auto;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.cta-button:hover {
+	background-color: #0056b3;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 30px;
+	color: #999999;
+	font-size: 14px;
+}
+
+/* Dodajemy efekt zmiany koloru nagłówka po najechaniu myszką */
+h1:hover {
+	color: #ff9900; /* Zmiana koloru nagłówka na pomarańczowy po najechaniu myszką */
+}
