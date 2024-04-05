@@ -1,12 +1,15 @@
+* {
+	padding: 0;
+	margin: 0;
+}
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #000000; /* Zmiana tła na czarne */
 	color: #ffffff; /* Zmiana koloru tekstu na biały */
-	margin: 0;
-	padding: 0;
+	text-align: center;
 }
 header {
-	margin-top: -5px;
+	margin: 0;
 	background-color: #fcecbf;
 	padding: 20px; /* odstępy wewnątrz nagłówka */
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* cień */
@@ -35,15 +38,20 @@ header {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
+	margin-top: 40px;
 }
 
-.text-container {
+.text-container,
+h1,
+p {
+	font-family: 'Montserrat', sans-serif;
 	flex: 1;
-	margin-left: 40px; /* Odstęp między obrazkiem a tekstem */
 	color: #c78f4a;
 	order: 1;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Dodanie cienia */
-	animation: fadeIn 1s ease; /* Dodajemy animację pojawiania się tekstu */
+	animation: fadeIn 1s ease;
+	text-align: center;
+	line-height: 1.6;
+	transition: color 0.3s ease; /* Dodajemy animację pojawiania się tekstu */
 }
 
 @keyframes fadeIn {
@@ -57,18 +65,9 @@ header {
 	}
 }
 
-h1 {
-	text-align: center;
-	color: #ffffff; /* Zmiana koloru nagłówka na biały */
-	transition: color 0.3s ease; /* Dodajemy efekt przejścia dla koloru tekstu nagłówka */
-}
-
-p {
-	line-height: 1.6;
-}
-
 .email-input {
-	width: calc(100% - 40px);
+	order: 2;
+	width: calc(100% - 10px);
 	margin: 0 auto 20px;
 	padding: 10px;
 	border: 1px solid #cccccc;
@@ -79,29 +78,59 @@ p {
 }
 
 .cta-button {
-	display: block;
-	width: 200px;
-	margin: 20px auto;
 	padding: 10px 20px;
-	background-color: #007bff;
-	color: #ffffff;
-	text-align: center;
-	text-decoration: none;
+	background-color: #c78f4a;
+	color: #fcecbf;
+	border: none;
 	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .cta-button:hover {
-	background-color: #0056b3;
+	background-color: var(--clr);
+	letter-spacing: 0.25em;
+	transition: 0.5s;
+	box-shadow: 0 0 35px var(--clr);
+}
+.newsletter-img {
+	max-width: 50%;
+	height: auto;
+	margin-top: 20px;
+	border-radius: 5px;
+	animation: fadeInImage 1s ease forwards; /* Animacja pojawiania się obrazu */
 }
 
 .footer {
 	text-align: center;
 	margin-top: 30px;
-	color: #999999;
+	color: #c78f4a;
 	font-size: 14px;
 }
 
 /* Dodajemy efekt zmiany koloru nagłówka po najechaniu myszką */
 h1:hover {
 	color: #ff9900; /* Zmiana koloru nagłówka na pomarańczowy po najechaniu myszką */
+}
+.socialMedia {
+	color: #c78f4a;
+	display: inline-block;
+	margin-right: 10px; /* Dostosuj odstęp między ikonami */
+}
+ul.socialMedia {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.socialMedia li {
+	display: inline-block;
+	margin-right: 10px; /* Dostosuj odstęp między ikonami */
+}
+
+.socialMedia li svg {
+	width: 26px;
+	height: 26px;
+	fill: currentColor;
 }

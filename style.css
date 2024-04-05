@@ -1,13 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	background-repeat: no-repeat;
+
 	background-size: cover;
 	background-color: hsl(0, 7%, 6%);
 	min-width: 100px;
 }
 header {
-	margin-top: -5px;
 	background-color: #fcecbf;
-	padding: 20px; /* odstępy wewnątrz nagłówka */
+	padding: 30px; /* odstępy wewnątrz nagłówka */
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* cień */
 	max-width: 100%;
 	min-width: 100px;
@@ -19,7 +23,11 @@ header {
 	margin-left: -20px;
 }
 .logo {
-	width: 350px; /* szerokość logo */
+	width: 350px;
+}
+.logo2 {
+	width: 100px;
+	color: #c78f4a;
 }
 .navigation {
 	display: flex;
@@ -34,28 +42,6 @@ header {
 	color: #007bff; /* kolor aktywnego linku */
 }
 
-.color-picker {
-	/* odstęp między ostatnim linkiem a kolorowym wybierakiem */
-	border: none;
-	border-radius: 50%; /* zaokrąglenie kolorowego wybieraka */
-	width: 30px; /* szerokość kolorowego wybieraka */
-	height: 30px; /* wysokość kolorowego wybieraka */
-	cursor: pointer;
-	outline: none;
-	transition: transform 0.3s ease;
-}
-
-.color-picker:hover {
-	transform: scale(1.1); /* powiększenie kolorowego wybieraka po najechaniu myszką */
-}
-
-.obrazek {
-	max-height: 300px;
-	width: 50rem;
-	margin-left: 40px;
-	margin-left: 15%;
-}
-
 .nav-link {
 	color: #c78f4a;
 	font-size: 20px;
@@ -66,10 +52,10 @@ header {
 }
 
 footer {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: #fcecbf;
 	display: flex;
 	justify-content: space-between;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 .footer-section {
 	flex: 1;
@@ -78,7 +64,8 @@ footer {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-weight: 400;
-	color: #fcecbf;
+	color: #c78f4a;
+	margin-left: 100px;
 }
 .newsletter-section {
 	flex: 1;
@@ -87,12 +74,18 @@ footer {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-weight: 400;
-	color: #fcecbf;
+	color: #c78f4a;
 }
 .email-newsletter {
 	width: 200px;
 	height: 30px;
 	border-radius: 10px;
+	border-color: #c78f4a;
+	background-color: #fcecbf;
+}
+input::placeholder {
+	color: #c78f4a;
+	/* Zmień na kolor, który chcesz */
 }
 .newsletter-section button {
 	padding: 10px 20px;
@@ -104,7 +97,7 @@ footer {
 	transition: background-color 0.3s ease;
 }
 .obrazek-body {
-	width: 500px;
+	width: 400px;
 	border-radius: 30px;
 	opacity: 0.7;
 }
@@ -139,7 +132,7 @@ footer {
 }
 
 .text-container h2 {
-	font-size: 24px;
+	font-size: 44px;
 	margin-bottom: 10px;
 	color: #c78f4a;
 	font-family: 'Montserrat', sans-serif;
@@ -160,6 +153,7 @@ footer {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .text-container button:hover {
@@ -167,4 +161,26 @@ footer {
 	letter-spacing: 0.25em;
 	transition: 0.5s;
 	box-shadow: 0 0 35px var(--clr);
+}
+.socialMedia {
+	color: #c78f4a;
+	display: inline-block;
+	margin-left: 59px;
+	margin-top: 10px;
+}
+ul.socialMedia {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+}
+
+ul.socialMedia li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.socialMedia li svg {
+	width: 26px;
+	height: 26px;
+	fill: currentColor;
 }
