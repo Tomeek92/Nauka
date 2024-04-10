@@ -11,8 +11,8 @@ body {
 }
 header {
 	background-color: #fcecbf;
-	padding: 30px; /* odstępy wewnątrz nagłówka */
-	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* cień */
+	padding: 30px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 	max-width: 100%;
 	min-width: 100px;
 }
@@ -85,7 +85,6 @@ footer {
 }
 input::placeholder {
 	color: #c78f4a;
-	/* Zmień na kolor, który chcesz */
 }
 .newsletter-section button {
 	padding: 10px 20px;
@@ -120,12 +119,12 @@ input::placeholder {
 	filter: contrast(110%) brightness(95%);
 }
 .image-container img:hover {
-	transform: scale(1.05); /* Powiększenie zdjęcia */
+	transform: scale(1.05);
 }
 
 .text-container {
 	flex: 1;
-	margin-left: 40px; /* Odstęp między obrazkiem a tekstem */
+	margin-left: 40px;
 	color: #c78f4a;
 	order: 1;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);

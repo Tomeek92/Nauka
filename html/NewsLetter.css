@@ -4,15 +4,15 @@
 }
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #000000; /* Zmiana tła na czarne */
-	color: #ffffff; /* Zmiana koloru tekstu na biały */
+	background-color: #000000; 
+	color: #ffffff; 
 	text-align: center;
 }
 header {
 	margin: 0;
 	background-color: #fcecbf;
-	padding: 20px; /* odstępy wewnątrz nagłówka */
-	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* cień */
+	padding: 20px; 
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 	max-width: 100%;
 	min-width: 100px;
 }
@@ -23,7 +23,7 @@ header {
 	margin-left: -20px;
 }
 .logo {
-	width: 350px; /* szerokość logo */
+	width: 350px; 
 }
 .nav-link {
 	color: #c78f4a;
@@ -51,7 +51,7 @@ p {
 	animation: fadeIn 1s ease;
 	text-align: center;
 	line-height: 1.6;
-	transition: color 0.3s ease; /* Dodajemy animację pojawiania się tekstu */
+	transition: color 0.3s ease; 
 }
 
 @keyframes fadeIn {
@@ -74,8 +74,7 @@ p {
 	border-radius: 5px;
 	font-size: 16px;
 	box-sizing: border-box;
-	color: #000000; /* Zmiana koloru tekstu w polu e-mail na czarny */
-}
+	color: #000000; 
 
 .cta-button {
 	padding: 10px 20px;
@@ -109,14 +108,11 @@ p {
 	font-size: 14px;
 }
 
-/* Dodajemy efekt zmiany koloru nagłówka po najechaniu myszką */
-h1:hover {
-	color: #ff9900; /* Zmiana koloru nagłówka na pomarańczowy po najechaniu myszką */
-}
+
 .socialMedia {
 	color: #c78f4a;
 	display: inline-block;
-	margin-right: 10px; /* Dostosuj odstęp między ikonami */
+	margin-right: 10px; 
 }
 ul.socialMedia {
 	list-style: none;
@@ -126,7 +122,7 @@ ul.socialMedia {
 
 ul.socialMedia li {
 	display: inline-block;
-	margin-right: 10px; /* Dostosuj odstęp między ikonami */
+	margin-right: 10px; 
 }
 
 .socialMedia li svg {
