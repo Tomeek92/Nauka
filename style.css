@@ -34,6 +34,7 @@ header {
 	align-items: center;
 }
 
+
 .nav-link:hover {
 	color: #007bff; /* kolor tekstu po najechaniu myszką */
 }
@@ -41,6 +42,9 @@ header {
 .active {
 	color: #007bff; /* kolor aktywnego linku */
 }
+
+	
+
 
 .nav-link {
 	color: #c78f4a;
@@ -67,6 +71,7 @@ footer {
 	color: #c78f4a;
 	margin-left: 100px;
 }
+
 .newsletter-section {
 	flex: 1;
 	padding: 10px;
@@ -160,12 +165,18 @@ input::placeholder {
 	letter-spacing: 0.25em;
 	transition: 0.5s;
 	box-shadow: 0 0 35px var(--clr);
+	
 }
 .socialMedia {
 	color: #c78f4a;
 	display: inline-block;
 	margin-left: 59px;
-	margin-top: 10px;
+	margin-top: 20px;
+	
+}
+.media{
+	margin-left:100px;
+	font-family: 'Montserrat', sans-serif;
 }
 ul.socialMedia {
 	list-style: none;
