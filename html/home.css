@@ -3,6 +3,14 @@
 @media screen and (min-width: rem) {
 	@content;
 }
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.container lime pullUp {
+		display: block;
+	}
+}
 
 /* Variables */
 :root {

@@ -1,0 +1,18 @@
+$width: 200px;
+$height: 200px;
+$bg-color: tomato;
+$second-bg-color: gold;
+
+div {
+	width: $width;
+	height: $height;
+}
+.kwadrat {
+	background-color: $bg-color;
+}
+.kwadrat2 {
+	background-color: $second-bg-color;
+}
+.kwadrat3 {
+	background-color: $bg-color;
+}
