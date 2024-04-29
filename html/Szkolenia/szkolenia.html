@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkolenia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #555;
+        }
+
+        .panel {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .panel p {
+            margin: 0;
+        }
+
+        .icon {
+            float: right;
+            margin-top: 5px;
+        }
+
+        .icon:before {
+            content: '\25B6';
+            /* ptaszek */
+            font-size: 12px;
+        }
+
+        .active .icon:before {
+            content: '\25BC';
+            /* strzałka w dół */
+        }
+
+        @media screen and (max-width: 600px) {
+            .accordion {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="accordion">Szkolenie z Laminacja brwi<span class="icon"></span></button>
+    <div class="panel">
+        <p>
+            Start 9:00/10:00<br>
+            Zakończenie 17:00/18:00<br>
+            Przerwa 30min po wykonaniu modelki pokazowej przez instruktora.<br><br>
+            Tematy omawiane w części teoretycznej:<br>
+            1. TRWAŁA STYLIZACJA BRWI<br>
+            2. PROCEDURA LAMINACJI<br>
+            ...
+        </p>
+        <p>CENA: 1400ZŁ</p>
+        <p>Ważne informacje:<br>
+            Ubierz się wygodnie i nie zapomnij okularów, jeśli potrzebujesz ich do lepszego widzenia!<br>
+            ...
+        </p>
+    </div>
+
+    <button class="accordion">Szkolenie z Laminacja rzęs<span class="icon"></span></button>
+    <div class="panel">
+        <p>
+            Start 9:00/10:00<br>
+            Zakończenie 17:00/18:00<br>
+            Przerwa 30min po wykonaniu modelki pokazowej przez instruktora.<br>
+            ...
+        </p>
+        <p>CENA: 1400ZŁ</p>
+        <p>Ważne informacje:<br>
+            Ubierz się wygodnie i nie zapomnij okularów, jeśli potrzebujesz ich do lepszego widzenia!<br>
+            ...
+        </p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
